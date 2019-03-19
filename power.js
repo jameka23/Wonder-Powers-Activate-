@@ -11,8 +11,8 @@ console.log("helllloo")
 */
 function flightHandlerFunction(){
     const section = document.getElementById("flight")
-    section.classList.remove("disabled")
-    section.classList.add("enabled")
+    section.classList.toggle("enabled")
+    section.classList.toggle("disabled")
 }
 
 document.querySelector("#activate-flight").addEventListener("click", flightHandlerFunction)
@@ -23,14 +23,14 @@ Once you have that working, write two more JavaScript functions, and two more qu
 
 function mindHandlerFunction(){
     const section = document.getElementById("mindreading")
-    section.classList.remove("disabled")
-    section.classList.add("enabled")
+    section.classList.toggle("enabled")
+    section.classList.toggle("disabled")
 }
 
 function xrayHandlerFunction(){
     const section = document.getElementById("xray")
-    section.classList.remove("disabled")
-    section.classList.add("enabled")
+    section.classList.toggle("enabled")
+    section.classList.toggle("disabled")
 }
 
 document.querySelector("#activate-mindreading").addEventListener("click", mindHandlerFunction)
